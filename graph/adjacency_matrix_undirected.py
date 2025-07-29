@@ -7,9 +7,12 @@ for u,v in edges:
     adj_mat[u][v]=1
     adj_mat[v][u]=1
 for row in adj_mat:
-    print(adj_mat)
+    print(row)
 
+print("undirected")
 for i in range(vertices):
-    for j in range(vertices):
+    for j in range(i+1,vertices):
         if adj_mat[i][j]==1:
             print(f"{i} ---{j}")
+
+
